@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { element, immutable } from "./mainconcept/element";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(element, document.getElementById("root"));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// if we want to see that how a element is mutable than comment out the line ReactDOM
+
+// immutable();
+
+// and now see the screen and its show hellow world along with the time and it's not changing
+// if because of element is immutable. If we want to chage it then we need to change the state
+// and rerender it again and again. Like in below
+
+setInterval(immutable, 1000);
