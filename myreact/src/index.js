@@ -8,9 +8,8 @@ import {
   FirstComponentWithProps,
 } from "./mainconcept/componentAndProps";
 
+import Clock from "./mainconcept/stateAndLifeCycle";
+
 // ReactDOM.render(<FirstComponent />, document.getElementById("root"));
 
-ReactDOM.render(
-  <FirstComponentWithProps timerName="bn-BD" />,
-  document.getElementById("root")
-);
+ReactDOM.render(<Clock timerName="bn-BD" />, document.getElementById("root"));
