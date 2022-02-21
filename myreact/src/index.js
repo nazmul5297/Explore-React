@@ -9,11 +9,17 @@ import {
 } from "./mainconcept/componentAndProps";
 
 import FirstClassComponent from "./mainconcept/classComponent/firstClassComponent";
-
-// ReactDOM.render(<FirstComponent />, document.getElementById("root"));
+import FirstFunctionalComponent from "./mainconcept/functionalComponent/firstComponent.js";
 
 ReactDOM.render(
+  // //component pass with props
   // <FirstComponentWithProps timerName="bn-BD" />,
-  <FirstClassComponent timerName="bn-BD" />,
+
+  // // first class component with life cycle methods
+  // <FirstClassComponent />,
+
+  // first functional component with use state hooks
+  <FirstFunctionalComponent />,
+
   document.getElementById("root")
 );
