@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function FirstFunctionalComponent(props) {
   const [date, setDate] = useState(new Date());
@@ -10,6 +10,12 @@ export default function FirstFunctionalComponent(props) {
     console.log(clock);
     setClock(clock === "bn-BD" ? "en-US" : "bn-BD");
   };
+
+  useEffect(() => {
+    setInterval(() => {
+      setDate(new Date());
+    });
+  }, [clock]);
 
   return (
     <>
