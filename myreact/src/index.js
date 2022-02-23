@@ -10,6 +10,7 @@ import {
 
 import FirstClassComponent from "./mainconcept/classComponent/firstClassComponent";
 import FirstFunctionalComponent from "./mainconcept/functionalComponent/firstComponent.js";
+import SecondFunctionalComponent from "./mainconcept/functionalComponent/secondFunctionalComponent";
 
 ReactDOM.render(
   // //component pass with props
@@ -19,7 +20,8 @@ ReactDOM.render(
   // <FirstClassComponent />,
 
   // first functional component with use state hooks
-  <FirstFunctionalComponent />,
+  // <FirstFunctionalComponent />,
+  <App />,
 
   document.getElementById("root")
 );
